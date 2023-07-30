@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://TG-Aurora.github.io</id>
+    <title>Aurora的小站</title>
+    <updated>2023-07-30T18:54:52.109Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://TG-Aurora.github.io"/>
+    <link rel="self" href="https://TG-Aurora.github.io/atom.xml"/>
+    <subtitle>你好！欢迎来到我的主页~</subtitle>
+    <logo>https://TG-Aurora.github.io/images/avatar.png</logo>
+    <icon>https://TG-Aurora.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, Aurora的小站</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello World !]]></title>
+        <id>https://TG-Aurora.github.io/post/hello-world/</id>
+        <link href="https://TG-Aurora.github.io/post/hello-world/">
+        </link>
+        <updated>2023-07-30T12:20:12.000Z</updated>
+        <content type="html"><![CDATA[<p>想要进一步了解，<br>
+请在此处任意选择一个平台与我深入♂交流<br>
+谢谢你的关注~</p>
+]]></content>
+    </entry>
+</feed>
