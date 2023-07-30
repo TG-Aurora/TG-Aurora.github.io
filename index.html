@@ -142,3 +142,16 @@ document.getElementById('data-container').innerText = JSON.stringify(data);
 </script>
 </body>
 </html>
+<!-- 在 head 部分导入 CSS -->
+<link rel="stylesheet" type="text/css" href="assets/particles.css">
+
+<!-- 在 body 部分添加特效容器 -->
+<div id="particles-js"></div>
+
+<!-- 在 body 部分导入 JavaScript -->
+<script src="assets/particles.js"></script>
+<script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+console.log('callback - particles.js config loaded');
+});
+</script>
