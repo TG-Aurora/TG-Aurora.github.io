@@ -241,39 +241,17 @@
             </div>
 
             <div class="about__buttons">
-<video id="video" class="video" src="video.mp4" loop=""></video>
-</video>
-</div>
-<script type="text/javascript">
-            const video = document.getElementById("video");
-            const overlay = document.getElementById("overlay");
-            const declineButton = document.getElementById("decline-button");
-            const acceptButton = document.getElementById("accept-button");
-            let hasClicked;
-            window.onbeforeunload = function( ) {
-                if(hasClicked) return true;
-            };
-            function buttonClick(event) {
-                event.preventDefault();
-                if(!hasClicked) hasClicked = true;
-                overlay.hidden = true;
-                video.play();
-                videoClick();
-            }
-            function videoClick(event) {
-                if(event) event.preventDefault();
-                // if not fullscreen
-                const { documentElement } = document;
-                if(documentElement.requestFullscreen) documentElement.requestFullscreen();
-                else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
-                else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
-                else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
-            }
-            acceptButton.addEventListener("click", buttonClick);
-            declineButton.addEventListener("click", buttonClick);
-            video.addEventListener("click", videoClick);
-        </script>
-</body>
+              <a
+                href="https://hisuifeng.github.io/cheat/video.mp4"
+                class="button button--flex"
+              >
+                <span i18n="download">Download CV</span
+                ><i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
