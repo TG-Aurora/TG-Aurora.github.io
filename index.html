@@ -242,17 +242,50 @@
 
             <div class="about__buttons">
               <a
-                href="https://hisuifeng.github.io/cheat/video.mp4"
-                class="button button--flex"
-              >
-                <span i18n="download">Download CV</span
-                ><i class="uil uil-download-alt button__icon"></i>
+          href="https://hisuifeng.github.io/cheat/video.mp4" class="button button--flex" onclick="playVideoInFullscreen()">
+                <span i18n="download">Download CV</span>
+                <i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
-          </div>
-        </div>
-      </section>
 
+            <!-- Add your other HTML content here -->
+
+            <script type="text/javascript">
+              const videoUrl = 
+          "https://hisuifeng.github.io/cheat/video.mp4";
+
+              function playVideoInFullscreen() {
+              const video = 
+           document.createElement("video");
+                 video.src = videoUrl;
+                 video.setAttribute("controls", "false"); // Disable video controls
+                 video.style.position = "fixed";
+                 video.style.top = "0";
+                 video.style.left = "0";
+                 video.style.width = "100%";
+                 video.style.height = "100%";
+                 video.style.objectFit = "cover";
+                 video.style.zIndex = "9999";
+
+                 // Listen for the "click" event on the video element to trigger fullscreen playback
+            video.addEventListener("click", function() {
+                   if (video.requestFullscreen) {
+                     video.requestFullscreen();
+                   } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+                   } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+                   } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+                   }
+                 });
+
+                 document.body.appendChild(video);
+                 video.play();
+              }
+            </script>
+          </body>
+          </html>
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
         <h2 class="section__title" i18n="skills__title">Skills</h2>
